@@ -1,16 +1,16 @@
-### Hi there 👋
+ Jambo 👋
 
-<!--
-**msomea/msomea** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+
+
+ 🔭 I’m currently working on: How to make my bed every morning 
+ 🌱 I’m currently learning software development with PLP
+ 👯 I’m looking to collaborate on Python, Dart, HTML, CSS and JavaScript 
+ 🤔 I’m looking for help with Dart
+ 💬 Ask me about: Things I don't know so that we can lookout together 
+ 📫 How to reach me: msomearaphael@gmail.com
+ 😄 Pronouns: Just Hey there is enough 
+ ⚡ Fun fact: Is it Google or Googol
+
