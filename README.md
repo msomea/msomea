@@ -7,5 +7,5 @@
 📫 How to reach me: msomearaphael@gmail.com<br/>
 😄 Pronouns: Just Hey there is enough <br/>
 ⚡ Fun fact: Is it Google or Googol<br/>
-(U+1F917) Hugs <br/>
+🤗 Hugs <br/>
 
