@@ -2,7 +2,7 @@
 🔭 I’m currently working on: How to make my bed every morning <br/>
 🌱 I’m currently learning software development with PLP<br/>
 👯 I’m looking to collaborate on Python, Dart, HTML, CSS and JavaScript <br/> 
-🤔 I’m looking for help with Dart<br/>
+🤔 I’m looking for help with Python<br/>
 💬 Ask me about: Things I don't know so that we can lookout together <br/>
 📫 How to reach me: msomearaphael@gmail.com<br/>
 😄 Pronouns: Just Hey there is enough <br/>
