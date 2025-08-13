@@ -1,7 +1,5 @@
 Hello. I am **Raphael Msomea** A passionate **Graphic Designer** and **Python Developer** with a focus on building robust, scalable web applications using Django framework.
 
-![Portfolio Screenshot](media/screenshot/hero.png)
-
 ## About me
 - I am a web developer passionate about solving real life problems through creating clean, beautiful and functional web experiences. I’m constantly learning new technologies and improving my craft tools box to deliver modern digital solutions.
 
