@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="static/css/styles.css"/>
+  <link rel="icon" type="image/icon" href="static/images/favicon.ico">
+</head>
+<body>
+<button id="mobilePanelToggle" aria-label="Toggle Right Panel">☰</button>
+<!-- Scroll Progress Bar -->
+<div id="progress-bar"></div>
+
+<!-- Left Side Navigation -->
+<aside class="side-nav">
+  <a href="#hero"><i class="fas fa-home"></i></a>
+  <a href="#about"><i class="fas fa-user"></i></a>
+  <a href="#skills" id="skillsLink"><i class="fas fa-code"></i></a>
+  <a href="#graphicDesign"><i class="fas fa-image"></i></a>
+  <a href="#education"><i class="fas fa-graduation-cap"></i></a>
+  <a href="#projects"><i class="fas fa-briefcase"></i></a>
+  <a href="#achievements"><i class="fas fa-trophy"></i></a>
+  <a href="#testimonials"><i class="fas fa-comment"></i></a>
+  <a href="#interests"><i class="fas fa-heart"></i></a>
+  <a href="#contact"><i class="fas fa-envelope"></i></a>
+  <button id="themeToggle"><i class="fas fa-moon"></i></button>
+</aside>
+
+<!-- Right Side Panel -->
+<aside class="right-panel" id="rightPanel">
+  <img src="static/images/avatar.jpg" alt="Avatar" class="avatar" loading="lazy">
+  <h3>Raphael Msomea</h3>
+  <p><i class="fas fa-phone"></i> +255 652 636 226</p>
+  <p><i class="fas fa-map-marker-alt"></i> Dar es Salaam</p>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/msomea" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/msomea"><i class="fab fa-github" target="_blank"></i></a>
+    <a href="https://www.instagram.com/callygraphic_tz" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/255652636226?text=Hello%20CallyGRAPHIC" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div><br>
+</aside>
+
+<!-- Main Content -->
+<main>
+  <!-- Hero -->
+  <section id="hero" class="section">
+    <h1>Hello, I'm Raphael Msomea</h1>
+    <div class="project-card">
+        <p>A passionate Graphic Designer and Python developer with a focus on building robust, scalable web applications using Django framework</p>
+        <a href="#projects" class="btn fade-in delay2">Browse My Works</a>
+    </div>
+    
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <div class="project-card">
+        <p>
+            I am a web developer passionate about solving real life problems through creating clean, beautiful and functional web experiences.
+            I’m constantly learning new technologies and improving my craft tools box to deliver modern digital solutions.
+        </p>
+        <p>
+            My expertise lies in designing websites and web applications through using different Django API, integrating databases like PostgreSQL and MySQL and implementing secure and
+            user-friendly solutions tailored to client needs.
+            Whether it's developing custom medical records platforms, e-commerce systems or data-driven applications,
+            I am dedicated to turning ideas into reality with precision and creativity.
+        </p>
+        <p>
+            When I’m not coding, you’ll find me creating different digital products like logos, posters and flyers; listening to audio books on personal and financial development, playing video games or watching documentary movies.
+        </p>
+        <p>
+            I am currently working on <a href="https://github.com/msomea/tupie.git" target="_blank" >Tupie Project;</a> A community-sharing platform designed to reduce waste while helping those in need. Let’s connect to build something amazing together!
+        </P>
+    </div>
+
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+  <h2>Skills</h2>
+    <section class="skills-section">
+        <div class="project-card">
+            <h2>Programing Language</h2>
+            <div class="skill">
+                <span>Python</span>
+                <div class="progress-bar">
+                <div class="progress" data-width="86%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>HTML</span>
+                <div class="progress-bar">
+                <div class="progress" data-width="95%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>CSS</span>
+                <div class="progress-bar">
+                <div class="progress" data-width="93%"></div>
+                </div>
+            </div>
+                <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar">
+                <div class="progress" data-width="76%"></div>
+                </div>
+            </div>
+        </div>
+    <section class="skills-section">
+            <div class="project-card">
+            <h2>Graphic Designing</h2>
+                <div class="skill">
+                    <span>Adobe Illustrator</span>
+                    <div class="progress-bar">
+                    <div class="progress" data-width="96%"></div>
+                </div>
+                </div>
+                <div class="skill">
+                    <span>Abode Photoshop</span>
+                    <div class="progress-bar">
+                    <div class="progress" data-width="91%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Canva</span>
+                    <div class="progress-bar">
+                    <div class="progress" data-width="87%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Figma</span>
+                    <div class="progress-bar">
+                    <div class="progress" data-width="82%"></div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+</section>
+
+  <!-- Education -->
+   <section id="education">
+  <h2>Education</h2>
+  <div class="timeline">
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h2>July 2025 – Present</h2>
+        <h3>Software Development cohort VIII</h3>
+        <p>Power Learn Project</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h2>April 2019 - september 2019</h2>
+        <h3>Complete Graphic Design Course for Beginner to Advanced</h3>
+        <p>Udemy Academy</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+  <section id="education" class="section">
+        <a href="static/pdf/msomea-dev-cv.pdf" target="_blank" download class="btn">Download My CV</a>
+  </section>
+
+  <!--Dev Projects -->
+  <section id="projects" class="section">
+        <h2 class="section-title">Browse through my Dev Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Tupie</h3>
+                <p>A community-sharing platform designed to reduce waste while helping those in need</p>
+                <a href="https://github.com/msomea/tupie.git" target="_blank" class="btn fade-in delay2">Browse</a>
+            </div>
+            <div class="project-card">
+                <h3>Patient Tracker</h3>
+                <p>A django-based web application for tracking daily patient data categorized by disease, age group and gender.</p>
+                <a href="https://github.com/msomea/patient_tracker.git" target="_blank" class="btn fade-in delay2">Browse</a>
+            </div>
+                        <div class="project-card">
+                <h3>EscrowTZ</h3>
+                <p>A secure and transparent platform for facilitating online transactions by acting as a trusted third part </p>
+                <a href="https://github.com/msomea/escrowtz.git" target="_blank" class="btn fade-in delay2">Browse</a>
+            </div>
+            <div class="project-card">
+                <h3>Tanzania Locations</h3>
+                <p>A PostgreSQL database for Tanzania locations containing data of all Regions with their respective Districts to Places.</p>
+                <a href="https://github.com/msomea/tanzania-locations.git" target="_blank" class="btn fade-in delay2">Browse</a>
+            </div>
+        </div>
+  </section>
+
+    <!-- Grapic Design-->
+  <section id="graphicDesign" class="section">
+  <h2>Graphic Design Works</h2>
+  <div class="graphic-design-cards">
+
+    <!-- Card 1 -->
+      <div class="design-card">
+        <h3>Machimbo ya Biashara</h3>
+        <div class="carousel">
+          <button class="carousel-btn prev">&lt;</button>
+          <div class="carousel-images">
+            <img src="static/images/projects/machimbo-1.jpg" alt="Design 1 Image 1" loading="lazy">
+            <img src="static/images/projects/machimbo-2.jpg" alt="Design 1 Image 2" loading="lazy">
+            <img src="static/images/projects/machimbo-3.jpg" alt="Design 1 Image 3" loading="lazy">
+          </div>
+          <button class="carousel-btn next">&gt;</button>
+        </div>
+      </div>
+
+    <!-- Card 2 -->
+    <div class="design-card">
+      <h3>Mama G Vitenge</h3>
+      <div class="carousel">
+        <button class="carousel-btn prev">&lt;</button>
+        <div class="carousel-images">
+          <img src="static/images/projects/mama-g-1.jpg" alt="Design 2 Image 1" loading="lazy">
+          <img src="static/images/projects/mama-g-2.jpg" alt="Design 2 Image 2" loading="lazy">
+          <img src="static/images/projects/mama-g-3.jpg" alt="Design 2 Image 3" loading="lazy">
+        </div>
+        <button class="carousel-btn next">&gt;</button>
+      </div>
+    </div>
+  
+    <!-- Card 3 -->
+    <div class="design-card">
+      <h3>G Store</h3>
+      <div class="carousel">
+        <button class="carousel-btn prev">&lt;</button>
+        <div class="carousel-images">
+          <img src="static/images/projects/g-store-1.jpg" alt="Design 3 Image 1" loading="lazy">
+          <img src="static/images/projects/g-store-2.jpg" alt="Design 3 Image 2" loading="lazy">
+          <img src="static/images/projects/g-store-3.jpg" alt="Design 3 Image 3" loading="lazy">
+        </div>
+        <button class="carousel-btn next">&gt;</button>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="design-card">
+      <h3>City Wine</h3>
+      <div class="carousel">
+        <button class="carousel-btn prev">&lt;</button>
+        <div class="carousel-images">
+          <img src="static/images/projects/city-wine-1.png" alt="Design 2 Image 1" loading="lazy">
+          <img src="static/images/projects/city-wine-2.jpg" alt="Design 2 Image 2" loading="lazy">
+          <img src="static/images/projects/city-wine-3.jpg" alt="Design 2 Image 3" loading="lazy">
+        </div>
+        <button class="carousel-btn next">&gt;</button>
+      </div>
+    </div>
+  </div>
+
+      <!-- Card 5 -->
+    <div class="design-card">
+      <h3>Hawa Catering</h3>
+      <div class="carousel">
+        <button class="carousel-btn prev">&lt;</button>
+        <div class="carousel-images">
+          <img src="static/images/projects/hawa-catering-1.jpg" alt="Design 2 Image 1" loading="lazy">
+          <img src="static/images/projects/hawa-catering-2.jpg" alt="Design 2 Image 2" loading="lazy">
+          <img src="static/images/projects/hawa-catering-3.jpg" alt="Design 2 Image 3" loading="lazy">
+        </div>
+        <button class="carousel-btn next">&gt;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Achievements -->
+<section id="achievements">
+  <h2 class="section-title">Achievements</h2>
+  <div class="achievements-grid">
+    
+    <div class="achievement-card">
+      <div class="achievement-icon">🏆</div>
+      <h3><span class="counter" data-target="78">0</span>+</h3>
+      <p>Projects Completed</p>
+    </div>
+
+    <div class="achievement-card">
+      <div class="achievement-icon">👥</div>
+      <h3><span class="counter" data-target="50">0</span>+</h3>
+      <p>Happy Clients</p>
+    </div>
+
+    <div class="achievement-card">
+      <div class="achievement-icon">📅</div>
+      <h3><span class="counter" data-target="5">0</span>+</h3>
+      <p>Years of Experience</p>
+    </div>
+
+    <div class="achievement-card">
+      <div class="achievement-icon">🌍</div>
+      <h3><span class="counter" data-target="3">0</span>+</h3>
+      <p>Countries Served</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Testimonials -->
+<section id="testimonials">
+  <h2 class="section-title">Testimonials</h2>
+  <div class="testimonial-container">
+    
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "Working with Cally Graphic was an amazing experience! The designs were creative, unique, and perfectly aligned with our brand."
+      </p>
+      <div class="testimonial-author">
+        <img src="static/images/avatar.png" alt="Client 1">
+        <div>
+          <h4>Theresia John</h4>
+          <span>Owner MAchimbo ya Bishara</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "Professional, responsive, and highly skilled. I will definitely hire again for future projects."
+      </p>
+      <div class="testimonial-author">
+        <img src="static/images/avatar.png" alt="Client 2">
+        <div>
+          <h4>Doreen Sharifu</h4>
+          <span>Owner Mama G Vitenge</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "The quality of work exceeded our expectations. Thank you for bringing our vision to life!"
+      </p>
+      <div class="testimonial-author">
+        <img src="static/images/avatar.png" alt="Client 3">
+        <div>
+          <h4>Ramuuh</h4>
+          <span>Owner Ramuuh Business Agency</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Interest Section-->
+  <section id="interests">
+  <h2 class="section-title">Interests</h2>
+  <div class="interests-grid">
+    
+    <div class="interest-card">
+      <div class="interest-icon">🎨</div>
+      <h3>Graphic Design</h3>
+      <p>Creating visually appealing designs for brands and projects.</p>
+    </div>
+
+    <div class="interest-card">
+      <div class="interest-icon">💻</div>
+      <h3>Web Development</h3>
+      <p>Building responsive and functional websites.</p>
+    </div>
+
+    <div class="interest-card">
+      <div class="interest-icon">📷</div>
+      <h3>Photography</h3>
+      <p>Capturing moments and telling stories through images.</p>
+    </div>
+
+    <div class="interest-card">
+      <div class="interest-icon">📚</div>
+      <h3>Learning</h3>
+      <p>Exploring new skills and keeping up with industry trends.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <p id="formStatus"></p>
+  </section>
+</main>
+
+<!-- Back to Top -->
+<button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+<script src="static/scripts/scripts.js"></script>
+
+</body>
+</html>
