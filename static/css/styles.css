@@ -603,13 +603,12 @@ main {
     width: 220px;
     right: -220px;
   }
-  .testimonial-card  {
-    margin-right: 20px;
-  }
   .right-panel.show {
     right: 0;
   }
-  main {
+  main,
+  .design-card,
+  .testimonial-card {
     margin-right: 30px;
   }
   #mobilePanelToggle {
@@ -621,9 +620,7 @@ main {
   #backToTop {
     z-index: 2;
   }
-  .design-card {
- margin-right: 20px;
-}
+  
 #backToTop {
   position: fixed;
   bottom: 20px;
