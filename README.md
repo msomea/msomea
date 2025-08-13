@@ -1,4 +1,5 @@
 Hello. I am **Raphael Msomea** A passionate **Graphic Designer** and **Python Developer** with a focus on building robust, scalable web applications using Django framework.
+- [Visit my Portfolio page](https://msomea.github.io/msomea/)
 
 ## About me
 - I am a web developer passionate about solving real life problems through creating clean, beautiful and functional web experiences. I’m constantly learning new technologies and improving my craft tools box to deliver modern digital solutions.
@@ -22,10 +23,10 @@ Hello. I am **Raphael Msomea** A passionate **Graphic Designer** and **Python De
 ## Contact
 - **Name:** Raphael Msomea
 - **Email:** msomearaphael@gmail.com
-- **WhatsApp** [Link](https://wa.me/255652636226?text=Hello%20CallyGRAPHIC)
-- **Instagram** [Link](https://www.instagram.com/callygraphic_tz)
-- **Linkedin** [Link](https://www.linkedin.com/in/msomea)
-- **Portfolio:** [Link](https://msomea.github.io/msomea/)
+- **WhatsApp** [Lets connect](https://wa.me/255652636226?text=Hello%20CallyGRAPHIC)
+- **Instagram** [View my page](https://www.instagram.com/callygraphic_tz)
+- **Linkedin** [Let linked on](https://www.linkedin.com/in/msomea)
+- **Portfolio:** [Visit my page](https://msomea.github.io/msomea/)
 
 
 
