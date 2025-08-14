@@ -46,8 +46,8 @@
 <main>
   <!-- Hero -->
   <section id="hero" class="section">
-    <h1>Hello, I'm Raphael Msomea</h1>
-    <div class="project-card">
+    <h1 class="section-title">Hello, I'm Raphael Msomea</h1>
+    <div class="hero-card">
         <p>A passionate Graphic Designer and Python developer with a focus on building robust, scalable web applications using Django framework</p>
         <a href="#projects" class="btn fade-in delay2">Browse My Works</a>
     </div>
@@ -57,7 +57,7 @@
   <!-- About -->
   <section id="about" class="section">
     <h2 class="section-title">About Me</h2>
-    <div class="project-card">
+    <div class="about-me-card">
         <p>
             I am a web developer passionate about solving real life problems through creating clean, beautiful and functional web experiences.
             I’m constantly learning new technologies and improving my craft tools box to deliver modern digital solutions.
@@ -75,34 +75,33 @@
             I am currently working on <a href="https://github.com/msomea/tupie.git" target="_blank" >Tupie Project;</a> A community-sharing platform designed to reduce waste while helping those in need. Let’s connect to build something amazing together!
         </P>
     </div>
-
   </section>
 
   <!-- Skills -->
   <section id="skills" class="section">
-  <h2>Skills</h2>
+  <h2 class="section-title">Skills</h2>
     <section class="skills-section">
-        <div class="project-card">
-            <h2>Programing Language</h2>
-            <div class="skill">
+        <div class="skills-card">
+            <h2 class="section-title">Programing Language</h2>
+            <div class="dev-skill-card">
                 <span>Python</span>
                 <div class="progress-bar">
                 <div class="progress" data-width="86%"></div>
                 </div>
             </div>
-            <div class="skill">
+            <div class="dev-skill-card">
                 <span>HTML</span>
                 <div class="progress-bar">
                 <div class="progress" data-width="95%"></div>
                 </div>
             </div>
-            <div class="skill">
+            <div class="dev-skill-card">
                 <span>CSS</span>
                 <div class="progress-bar">
                 <div class="progress" data-width="93%"></div>
                 </div>
             </div>
-                <div class="skill">
+                <div class="dev-skill-card">
                 <span>JavaScript</span>
                 <div class="progress-bar">
                 <div class="progress" data-width="76%"></div>
@@ -110,27 +109,27 @@
             </div>
         </div>
     <section class="skills-section">
-            <div class="project-card">
-            <h2>Graphic Designing</h2>
-                <div class="skill">
+            <div class="skills-card">
+            <h2 class="section-title">Graphic Designing</h2>
+                <div class="graphic-skill-card">
                     <span>Adobe Illustrator</span>
                     <div class="progress-bar">
                     <div class="progress" data-width="96%"></div>
                 </div>
                 </div>
-                <div class="skill">
+                <div class="graphic-skill-card">
                     <span>Abode Photoshop</span>
                     <div class="progress-bar">
                     <div class="progress" data-width="91%"></div>
                     </div>
                 </div>
-                <div class="skill">
+                <div class="graphic-skill-card">
                     <span>Canva</span>
                     <div class="progress-bar">
                     <div class="progress" data-width="87%"></div>
                     </div>
                 </div>
-                <div class="skill">
+                <div class="graphic-skill-card">
                     <span>Figma</span>
                     <div class="progress-bar">
                     <div class="progress" data-width="82%"></div>
@@ -143,10 +142,10 @@
 
   <!-- Education -->
    <section id="education">
-  <h2>Education</h2>
+  <h2 class="section-title">Education</h2>
   <div class="timeline">
     <div class="timeline-item left">
-      <div class="timeline-content">
+      <div class="education-card">
         <h2>July 2025 – Present</h2>
         <h3>Software Development cohort VIII</h3>
         <p>Power Learn Project</p>
@@ -154,7 +153,15 @@
     </div>
 
     <div class="timeline-item right">
-      <div class="timeline-content">
+      <div class="education-card">
+        <h2>August 2025 - October 2025</h2>
+        <h3>AI Literacy Certificate Course</h3>
+        <p>Otermans Institute</p>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="education-card">
         <h2>April 2019 - september 2019</h2>
         <h3>Complete Graphic Design Course for Beginner to Advanced</h3>
         <p>Udemy Academy</p>
@@ -163,30 +170,30 @@
 
   </div>
 </section>
-  <section id="education" class="section">
-        <a href="static/pdf/msomea-dev-cv.pdf" target="_blank" download class="btn">Download My CV</a>
-  </section>
+<section id="education" class="section">
+    <a href="static/pdf/msomea-dev-cv.pdf" target="_blank" id="download" download class="btn">Download My CV</a>
+</section>
 
   <!--Dev Projects -->
   <section id="projects" class="section">
         <h2 class="section-title">Browse through my Dev Projects</h2>
         <div class="projects-grid">
-            <div class="project-card">
+            <div class="dev-project-card">
                 <h3>Tupie</h3>
                 <p>A community-sharing platform designed to reduce waste while helping those in need</p>
                 <a href="https://github.com/msomea/tupie.git" target="_blank" class="btn fade-in delay2">Browse</a>
             </div>
-            <div class="project-card">
+            <div class="dev-project-card">
                 <h3>Patient Tracker</h3>
                 <p>A django-based web application for tracking daily patient data categorized by disease, age group and gender.</p>
                 <a href="https://github.com/msomea/patient_tracker.git" target="_blank" class="btn fade-in delay2">Browse</a>
             </div>
-                        <div class="project-card">
+            <div class="dev-project-card">
                 <h3>EscrowTZ</h3>
                 <p>A secure and transparent platform for facilitating online transactions by acting as a trusted third part </p>
                 <a href="https://github.com/msomea/escrowtz.git" target="_blank" class="btn fade-in delay2">Browse</a>
             </div>
-            <div class="project-card">
+            <div class="dev-project-card">
                 <h3>Tanzania Locations</h3>
                 <p>A PostgreSQL database for Tanzania locations containing data of all Regions with their respective Districts to Places.</p>
                 <a href="https://github.com/msomea/tanzania-locations.git" target="_blank" class="btn fade-in delay2">Browse</a>
@@ -196,11 +203,10 @@
 
     <!-- Grapic Design-->
   <section id="graphicDesign" class="section">
-  <h2>Graphic Design Works</h2>
+  <h2 class="section-title">Graphic Design Works</h2>
   <div class="graphic-design-cards">
-
     <!-- Card 1 -->
-      <div class="design-card">
+      <div class="design-project-card">
         <h3>Machimbo ya Biashara</h3>
         <div class="carousel">
           <button class="carousel-btn prev">&lt;</button>
@@ -214,7 +220,7 @@
       </div>
 
     <!-- Card 2 -->
-    <div class="design-card">
+    <div class="design-project-card">
       <h3>Mama G Vitenge</h3>
       <div class="carousel">
         <button class="carousel-btn prev">&lt;</button>
@@ -228,7 +234,7 @@
     </div>
   
     <!-- Card 3 -->
-    <div class="design-card">
+    <div class="design-project-card">
       <h3>G Store</h3>
       <div class="carousel">
         <button class="carousel-btn prev">&lt;</button>
@@ -242,7 +248,7 @@
     </div>
 
     <!-- Card 4 -->
-    <div class="design-card">
+    <div class="design-project-card">
       <h3>City Wine</h3>
       <div class="carousel">
         <button class="carousel-btn prev">&lt;</button>
@@ -257,7 +263,7 @@
   
 
       <!-- Card 5 -->
-    <div class="design-card">
+    <div class="design-project-card">
       <h3>Hawa Catering</h3>
       <div class="carousel">
         <button class="carousel-btn prev">&lt;</button>
@@ -316,10 +322,10 @@
         "Working with Cally Graphic was an amazing experience! The designs were creative, unique, and perfectly aligned with our brand."
       </p>
       <div class="testimonial-author">
-        <img src="static/images/avatar.png" alt="Client 1">
+        <img src="static/images/projects/teddy.png" alt="Client 1">
         <div>
           <h4>Theresia John</h4>
-          <span>Owner MAchimbo ya Bishara</span>
+          <span>Owner Machimbo ya Biashara</span>
         </div>
       </div>
     </div>

@@ -34,6 +34,10 @@ body.dark-mode {
 h1, h2, h3 {
   font-family: "Bricolage", sans-serif;
 }
+p, a {
+  font-family: "Agrandir", sans-serif;
+  font-size: medium;
+}
 a {
     color: var(--accent-dark);
     text-decoration: none;
@@ -46,7 +50,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--dark);
-  font-family: "Agrandir", sans-serif;
+  
 }
 #progress-bar {
   position: fixed;
@@ -56,6 +60,12 @@ body {
   background: var(--accent-dark);
   width: 0%;
   z-index: 999;
+}
+.right-panel{
+  z-index: 1;
+}
+#backToTop {
+  z-index: 2;
 }
 
 /* Left Nav */
@@ -162,6 +172,40 @@ main {
   transform: translateY(0);
 }
 
+/* cards */
+.hero-card,
+.about-me-card,
+.skills-card,
+.education-card,
+.dev-project-card,
+.design-project-card,
+.achievement-card,
+.testimonial-card,
+.interest-card {
+  background: var(--light);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-card:hover,
+.about-me-card:hover,
+.skills-card:hover,
+.education-card:hover,
+.dev-project-card:hover,
+.design-project-card:hover,
+.achievement-card:hover,
+.testimonial-card:hover,
+.interest-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px var(--hover-glow);
+}
+
 /* Skills */
 .skill {
   margin-bottom: 15px;
@@ -173,7 +217,6 @@ main {
   overflow: hidden;
   margin-top: 5px;
 }
-
 .progress {
   background: var(--accent);
   height: 100%;
@@ -189,7 +232,6 @@ main {
   margin: auto;
   padding: 20px 0;
 }
-
 /* Vertical line in the middle */
 .timeline::after {
   content: '';
@@ -198,38 +240,23 @@ main {
   background-color: var(--accent);
   top: 0;
   bottom: 0;
-  left: 50%;
+  left: 55%;
   margin-left: -2px;
 }
-
 /* Timeline items */
 .timeline-item {
   padding: 10px 40px;
   position: relative;
   width: 50%;
 }
-
 /* Left items */
 .timeline-item.left {
   left: 0;
 }
-
 /* Right items */
 .timeline-item.right {
   left: 50%;
 }
-
-/* Card content */
-.timeline-content {
-  background: var(--light);
-  padding: 15px 20px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  position: relative;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 /* Circles on the line */
 .timeline-item::before {
   content: '';
@@ -243,7 +270,6 @@ main {
   border-radius: 50%;
   z-index: 1;
 }
-
 .timeline-item.right::before {
   left: -9px;
 }
@@ -273,48 +299,25 @@ main {
 }
 
 
-
-
 /* Projects */
-.project-card {
-  background: var(--light);
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Dev Projects*/
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
-.project-card:hover, .timeline-content:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px var(--hover-glow);
-}
-
-/* Graphic Design */
+/* Graphic Design Projects */
 .graphic-design-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   margin-top: 20px;
 }
-
-.design-card {
-  background: var(--light);
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 15px;
-  text-align: center;
-  overflow: hidden;
-  margin: 20px;
- 
-}
-
-.design-card h3 {
+.design-project-card h3 {
   margin-bottom: 12px;
   color: var(--dark);
 }
-
 /* Carousel styles */
 .carousel {
   position: relative;
@@ -323,13 +326,11 @@ main {
   box-shadow: 0 0 6px rgba(0,0,0,0.1);
   max-height: 300px;
 }
-
 .carousel-images {
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: 100%; /* 3 images */
 }
-
 .carousel-images img {
   width: 100%;
   height: auto;
@@ -338,7 +339,6 @@ main {
   max-height: 300px;
   background: var(--light);
 }
-
 /* Buttons */
 .carousel-btn {
   position: absolute;
@@ -357,19 +357,15 @@ main {
   transition: opacity 0.3s ease;
   z-index: 10;
 }
-
 .carousel-btn:hover {
   opacity: 1;
 }
-
 .carousel-btn.prev {
   left: 10px;
 }
-
 .carousel-btn.next {
   right: 10px;
 }
-
 
 
 /* Achievements Section */
@@ -377,49 +373,28 @@ main {
   padding: 60px 20px;
   text-align: center;
 }
-
 .section-title {
   font-size: 2.2rem;
   margin-bottom: 40px;
 }
-
 .achievements-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
 }
-
-.achievement-card {
-  background: var(--light);
-  border: 1px solid #ddd;
-  padding: 25px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.achievement-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
 .achievement-icon {
   font-size: 3rem;
   margin-bottom: 15px;
 }
-
 .achievement-card h3 {
   font-size: 2rem;
   margin: 0;
 }
-
 .achievement-card p {
   font-size: 1rem;
   margin-top: 8px;
   opacity: 0.9;
 }
-
 /* Animation for counters */
 .counter {
   display: inline-block;
@@ -427,105 +402,64 @@ main {
   
 }
 
-/* Interests Section */
-#interests {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.interests-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 25px;
-}
-
-.interest-card {
-  background: var(--light);
-  border: 1px solid #ddd;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.interest-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-.interest-icon {
-  font-size: 3rem;
-  margin-bottom: 15px;
-}
-
-.interest-card h3 {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-.interest-card p {
-  font-size: 1rem;
-  margin-top: 8px;
-  opacity: 0.85;
-}
-
 /* Testimonials Section */
 #testimonials {
   padding: 60px 20px;
   text-align: center;
 }
-
 .testimonial-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
 }
-
-.testimonial-card {
-  background: var(--light);
-  border: 1px solid #ddd;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.testimonial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
 .testimonial-text {
   font-style: italic;
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 20px;
 }
-
 .testimonial-author {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-
 .testimonial-author img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
 }
-
 .testimonial-author h4 {
   margin: 0;
   font-size: 1rem;
 }
-
 .testimonial-author span {
   font-size: 0.9rem;
   opacity: 0.75;
+}
+
+/* Interests Section */
+#interests {
+  padding: 60px 20px;
+  text-align: center;
+}
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+.interest-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+.interest-card h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.interest-card p {
+  font-size: 1rem;
+  margin-top: 8px;
+  opacity: 0.85;
 }
 
 
@@ -627,4 +561,64 @@ main {
   right: 20px;
   
 }
+}
+
+@media(max-width: 400px) {
+  .right-panel {
+    width: 180px;
+    right: -220px;
+  }
+  .section-title {
+    font-size: 22px;
+  }
+  h1, h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  a {
+    font-size: 16px;
+  }
+  
+  main {
+    font-size: 16px;
+    margin-right: 60px;
+  }
+  #mobilePanelToggle {
+    display: block;
+    right: 5px;
+  }
+  #backToTop {
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+}
+  .education-card {
+    max-width: 360px;
+  }
+.hero-card,
+.about-me-card,
+
+.skills-card,
+.achievement-card,
+.testimonial-card,
+.interest-card {
+    width: 200px;
+  }
+  .education-card {
+    width: 148px;
+  }
+  .dev-project-card,
+  .design-project-card,
+  .achievement-card,
+  .testimonial-card,
+  .interest-card {
+    width: 180px;
+  }
+  #download {
+    font-size: 14px;
+  }
+
+
 }
