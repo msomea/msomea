@@ -463,6 +463,149 @@ main {
 }
 
 
+/* Services Section */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.services-grid .card {
+  background: var(--light);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.services-grid .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.services-grid .card:hover::before {
+  transform: scaleX(1);
+}
+
+.services-grid .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px var(--hover-glow);
+  border-color: var(--accent);
+}
+
+.services-grid .card i {
+  font-size: 2.5rem;
+  color: var(--accent-dark);
+  margin-bottom: 20px;
+  display: block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.services-grid .card:hover i {
+  transform: scale(1.1);
+  color: var(--accent);
+}
+
+.services-grid .card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.services-grid .card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--dark);
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+.services-grid .card .btn {
+  margin-top: 15px;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+}
+
+/* CTA Section */
+.cta {
+  background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.05);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.cta:hover::before {
+  transform: translateX(0);
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--light);
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--light);
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.cta .btn {
+  background: var(--light);
+  color: var(--accent-dark);
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.cta .btn:hover {
+  background: var(--dark);
+  color: var(--light);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
 /* Contact Forms */
 #contactForm {
   display: flex;
@@ -554,6 +697,47 @@ main {
   }
   #backToTop {
     z-index: 2;
+  }
+  
+  /* Services Responsive */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  
+  .services-grid .card {
+    padding: 25px 15px;
+  }
+  
+  .services-grid .card i {
+    font-size: 2rem;
+  }
+  
+  .services-grid .card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .services-grid .card p {
+    font-size: 0.95rem;
+  }
+  
+  /* CTA Responsive */
+  .cta {
+    padding: 60px 20px;
+  }
+  
+  .cta h2 {
+    font-size: 2rem;
+  }
+  
+  .cta p {
+    font-size: 1.1rem;
+  }
+  
+  .cta .btn {
+    padding: 12px 25px;
+    font-size: 1rem;
   }
   
 #backToTop {
