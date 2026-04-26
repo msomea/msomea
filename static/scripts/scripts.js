@@ -130,11 +130,14 @@ window.addEventListener("scroll", () => {
 backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
 // Contact form with EmailJS (placeholder)
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-  document.getElementById("formStatus").innerText = "✅ Message sent (demo)";
-  this.reset();
-});
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    document.getElementById("formStatus").innerText = "✅ Message sent (demo)";
+    this.reset();
+  });
+}
 
 // Carousel in Graphic design
 document.querySelectorAll('.carousel').forEach(carousel => {
